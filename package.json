@@ -1,9 +1,12 @@
 {
+  "homepage": "https://yellyputriw.github.io/myClock",
   "name": "myclock",
   "version": "1.0.0",
   "description": "Working Analog Clock",
   "main": "script.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start-dev": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
